@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Dark / Light Mode Toggle -->
+    <div class="toggle-container">
+        <input type="checkbox" id="dark-mode" class="input">
+        <label for="dark-mode" class="label">
+            <div class="circle">
+                <!-- Sun Icon -->
+                <svg class="icon sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <!-- Moon Icon -->
+                <svg class="icon moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </label>
+    </div>
+
+    <main class="countdown-container">
+        <h2>Countdown To New Year</h2>
+        <div class="year" id="next-year">2027</div>
+
+        <!-- Main Countdown Cards -->
+        <div class="countdown">
+            <div class="time-box">
+                <span id="day">00</span>
+                <small>Days</small>
+            </div>
+            <div class="time-box">
+                <span id="hour">00</span>
+                <small>Hours</small>
+            </div>
+            <div class="time-box">
+                <span id="minute">00</span>
+                <small>Minutes</small>
+            </div>
+            <div class="time-box">
+                <span id="second">00</span>
+                <small>Seconds</small>
+            </div>
+        </div>
+
+        <!-- Resolution Section with Save & Delete Buttons -->
+        <div class="resolution-box">
+            <h3>My New Year Goal</h3>
+            <div class="input-group">
+                <input type="text" id="resolution-input" placeholder="Type your goal for next year...">
+                <button id="save-resolution-btn">Save Goal</button>
+            </div>
+
+            <div class="saved-goal-container">
+                <p id="saved-goal-text"></p>
+                <button id="delete-goal-btn" class="delete-btn" style="display: none;">Delete Goal</button>
+            </div>
+        </div>
+        <!-- Audio & Effects Controls -->
+        <div class="controls-box">
+            <button id="music-btn" class="control-btn">🎵 Play Music</button>
+            <button id="theme-btn" class="control-btn">🎆 Fireworks On/Off</button>
+            <audio id="bg-music" loop src="music.mp3"></audio>
+            <canvas id="fireworks-canvas"></canvas>
+        </div>
+
+        <!-- Audio & Effects Controls -->
+        <div class="controls-box">
+            <audio id="bg-music" loop src="music.mp3"></audio>
+            <canvas id="fireworks-canvas"></canvas>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
