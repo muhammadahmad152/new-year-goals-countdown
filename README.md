@@ -8,6 +8,10 @@ The project combines a real-time countdown with personal goals, animations, musi
 
 **[View Live Demo](https://muhammadahmad152.github.io/new-year-goals-countdown/)**
 
+## 📸 Screenshot
+
+![New Year Goals Countdown Screenshot](screenshot.png)
+
 ## ✨ Features
 
 * ⏳ Real-time countdown to New Year 2027
